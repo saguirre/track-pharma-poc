@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components": ["common/components/index.ts"],
+      "@components/*": ["common/components/*"],
+      "@enums": ["common/enums/index.ts"],
+      "@enums/*": ["common/enums/*"],
+      "@models": ["common/models/index.ts"],
+      "@models/*": ["common/models/*"],
+      "@services": ["common/services/index.ts"],
+      "@services/*": ["common/services/*"],
+      "@contexts": ["common/contexts/index.ts"],
+      "@contexts/*": ["common/contexts/*"],
+      "@utils": ["common/utils/index.ts"],
+      "@utils/*": ["common/utils/*"],
+      "@hooks": ["common/hooks/index.ts"],
+      "@hooks/*": ["common/hooks/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

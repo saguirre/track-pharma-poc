@@ -1,0 +1,15 @@
+export const statusPills: { [key: string]: { textColorClass: string; bgColorClass: string } } = {
+  created: { textColorClass: "text-violet-800", bgColorClass: "bg-violet-100" },
+  approvalRequested: { textColorClass: "text-gray-800", bgColorClass: "bg-gray-100" },
+  approved: { textColorClass: "text-green-800", bgColorClass: "bg-green-100" },
+  declined: { textColorClass: "text-red-800", bgColorClass: "bg-red-100" },
+  pendingManufacturing: { textColorClass: "text-amber-800", bgColorClass: "bg-amber-100" },
+  manufactured: { textColorClass: "text-violet-800", bgColorClass: "bg-violet-100" },
+  inTransitToDistributer: { textColorClass: "text-blue-800", bgColorClass: "bg-blue-100" },
+  atDistributerFacility: { textColorClass: "text-yellow-800", bgColorClass: "bg-yellow-100" },
+  inTransitToWholesaler: { textColorClass: "text-blue-800", bgColorClass: "bg-blue-100" },
+  deliveredToWholesaler: { textColorClass: "", bgColorClass: "bg-cyan-100" },
+  atWholesalerFacility: { textColorClass: "text-yellow-800", bgColorClass: "bg-yellow-100" },
+  readyForSale: { textColorClass: "text-violet-800", bgColorClass: "bg-violet-100" },
+  sold: { textColorClass: "text-green-800", bgColorClass: "bg-green-100" },
+};

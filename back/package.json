@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "mumbai": "npx hardhat run scripts/deploy.ts --network mumbai",
+    "ropsten": "npx hardhat run scripts/deploy.ts --network ropsten",
+    "goerli": "npx hardhat run scripts/deploy.ts --network goerli"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.5",
+    "hardhat": "^2.9.3",
+    "hardhat-gas-reporter": "^1.0.8"
+  },
+  "devDependencies": {
+    "@typechain/hardhat": "^6.0.0",
+    "@types/mocha": "^9.1.1",
+    "solidity-coverage": "^0.7.21",
+    "ts-node": "^10.7.0"
+  }
+}

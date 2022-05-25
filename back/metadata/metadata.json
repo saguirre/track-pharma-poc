@@ -1,0 +1,23 @@
+{
+  "description": "1",
+  "image": "https://gateway.pinata.cloud/ipfs/QmQV7iPrEHJ3P9VqdsPxWoPHn7xromGk4xt9c6mMhYj7PT/drug_facts.gif",
+  "name": "1",
+  "attributes": [
+    {
+      "trait_type": "Active Ingredient",
+      "value": "Chlorpheniramine maleate 2mg"
+    },
+    {
+      "trait_type": "Uses",
+      "value": "Temporarily relieves sneezing, runny nose, itchy watery eyes and itchy throat"
+    },
+    {
+      "trait_type": "Warnings",
+      "value": "Ask a doctor before use if you have: Glaucoma, A breathing problem such as emphysema or chronic bronchitis, trouble urinating due to an enlarged prostate gland."
+    },
+    {
+      "trait_type": "Other information",
+      "value": "Store at 20-25C (68-77F). Protect from excessive moisture."
+    }
+  ]
+}
