@@ -1,15 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import _ from "lodash";
 
 import {
   authenticatedRoute,
-  ButtonSpinner,
   DrugTimeline,
   DrugView,
-  LoadingWrapper,
   NotificationAlert,
   SupplyChainTimeline,
   Wrapper,
@@ -19,7 +16,7 @@ import { PermissionEnum, RoleEnum } from "@enums";
 import { useDrugTimeline, useNotification, useSupplyChainTimeline } from "@hooks";
 import { Action, Drug, drugInitialState, Permission } from "@models";
 import { UserRole } from "@services";
-import { classNames, getEventName } from "@utils";
+import { getEventName } from "@utils";
 
 const ViewTokenPage: NextPage = () => {
   const router = useRouter();
@@ -110,12 +107,16 @@ const ViewTokenPage: NextPage = () => {
   }, []);
 
   useEffect(() => {
-    getRoles();
+    if (router.isReady) {
+      getRoles();
+    }
   }, [drug]);
 
   useEffect(() => {
-    getActions(drug);
-    updateTimelines(drug);
+    if (router.isReady) {
+      getActions(drug);
+      updateTimelines(drug);
+    }
   }, [roles]);
 
   return (
